@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Benjamin Patrick Eyoh (Bhenjameen)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me</title>
+
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: blueviolet;
+            color: white;
+        }
+        
+        #form form,
+        textarea {
+            text-align: center;
+        }
+        
+        #form textarea {
+            width: 20%;
+            padding-bottom: 50px;
+        }
+        
+        h3 {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Please enter a message below</h3>
+    <div id="form">
+        <form action="/message" method="POST">
+            <p>
+                <label for="message">Message</label><br />
+                <textarea id="input" class="textarea" type="text" name="message" placeholder="Enter Your Message Here" required></textarea>
+            </p>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <script src="node_1.js"></script>
+
+</body>
+
+</html>
